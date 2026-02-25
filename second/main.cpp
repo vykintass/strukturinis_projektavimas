@@ -88,31 +88,59 @@ using namespace std;
 //     return 0;
 // }
 //4
+// int main() {
+//     int ivertinimas;
+//     cout << "Iveskite egzamino ivertinima: " << endl;
+//     cin >> ivertinimas;
+//     if (ivertinimas < 1 || ivertinimas > 10) {
+//         cout << "Pateiktas neteisingas ivertinimo formatas" << endl;
+//         return 0;
+//     }
+//     switch (ivertinimas) {
+//         case 10:
+//             cout << "puiku" << endl;
+//             break;
+//         case 9:
+//             cout << "labai gerai" << endl;
+//             break;
+//         case 8:
+//         case 7:
+//             cout << "gerai" << endl;
+//             break;
+//         case 6:
+//         case 5:
+//             cout << "patenkinamai" << endl;
+//             break;
+//         default:
+//             cout << "egzaminas neislaikytas" << endl;
+//     }
+//     return 0;
+// }
+//5
+// int main() {
+//     int suma = 0;
+//     for (int i = 1; i <= 20; ++i) {
+//         if (i % 2 != 0) {
+//             suma = suma + i;
+//         }
+//     }
+//     cout << "Galutine suma: "<<suma << endl;
+// }
+//6
+// int main() {
+//     double suma = 1000;
+//     double palukanos = 0.05;
+//     for (int i = 1; i <= 10; ++i) {
+//         suma = suma * (1 + palukanos);
+//     }
+//     cout << "Galutine suma: " << suma << endl;
+//     return 0;
+// }
+//7
 int main() {
-    int ivertinimas;
-    cout << "Iveskite egzamino ivertinima: " << endl;
-    cin >> ivertinimas;
-    if (ivertinimas < 1 || ivertinimas > 10) {
-        cout << "Pateiktas neteisingas ivertinimo formatas" << endl;
-        return 0;
+    for (int i = 1; i <= 20; ++i) {
+        if (i % 4 == 0) {
+            cout << i << endl;
+        }
     }
-    switch (ivertinimas) {
-        case 10:
-            cout << "puiku" << endl;
-            break;
-        case 9:
-            cout << "labai gerai" << endl;
-            break;
-        case 8:
-        case 7:
-            cout << "gerai" << endl;
-            break;
-        case 6:
-        case 5:
-            cout << "patenkinamai" << endl;
-            break;
-        default:
-            cout << "egzaminas neislaikytas" << endl;
-    }
-    return 0;
 }
