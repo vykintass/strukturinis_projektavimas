@@ -86,6 +86,7 @@ int main() {
  else {
      cout<<"Pateiktas ne dvizenklis skaicus.";
     }
+    return 0;
  }
  // [Pradžia]
  //      ↓
