@@ -53,12 +53,50 @@ using namespace std;
 //     return 0;
 // }
 //5
+// int main() {
+//     double a,b,c,d,e;
+//     double vidurkis;
+//     cout << " Iveskite 5 skaicius: ";
+//     cin >> a>>b>>c>>d>>e;
+//     vidurkis = (a+b+c+d+e)/5;
+//     cout <<"Ivestu skaiciu vidurkis: "<<vidurkis<<endl;
+//     return 0;
+// }
+// [Pradžia]
+//      ↓
+// [Įvesti a, b, c, d, e]
+//      ↓
+// [vidurkis = (a+b+c+d+e)/5]
+//      ↓
+// [Išvesti vidurkį]
+//      ↓
+// [Pabaiga]
+//6
 int main() {
-    double a,b,c,d,e;
-    double vidurkis;
-    cout << " Iveskite 5 skaicius: ";
-    cin >> a>>b>>c>>d>>e;
-    vidurkis = (a+b+c+d+e)/5;
-    cout <<"Ivestu skaiciu vidurkis: "<<vidurkis<<endl;
-    return 0;
-}
+ int skaicius,pirmas, antras;
+ int suma;
+ cout <<"pateikite dvizenkli skaiciu: ";
+ cin >>skaicius;
+ if (skaicius >=10 && skaicius <=99) {
+     pirmas = skaicius/10;
+     antras = skaicius%10;
+     suma = pirmas + antras;
+     cout<<"Skaiciaus "<<skaicius<<" skaitmenu suma yra: "<<suma<<endl;
+    }
+ else {
+     cout<<"Pateiktas ne dvizenklis skaicus.";
+    }
+ }
+ // [Pradžia]
+ //      ↓
+ // [Įvesti skaiciu]
+ //      ↓
+ // [Patikrinti ar dvizenklis]
+ //      ↓
+ // [Skaiciu isskaidyti, pirma skaiciu gauti dalijant is 10]
+ //      ↓
+ // [Antra skaiciu gauti dalijant is 10 bet su liekana]
+ //      ↓
+ // [Sudeti pirma ir antra skaiciu]
+ //      ↓
+ // [Pabaiga]
