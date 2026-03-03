@@ -15,7 +15,6 @@ int main() {
     double INR_Bendras   = 104.6918;
     double INR_Pirkti    = 101.3862;
     double INR_Parduoti  = 107.8546;
-    //double gaunama_suma=0;
     cout << "==============================\n";
     cout << "      VALIUTOS KEITYKLA       \n";
     cout << "==============================\n";
@@ -32,10 +31,6 @@ int main() {
     cout << "Indijos rupija (INR)\n\n";
     cout << "Iveskite pasirinkimo trumpini: ";
     cin >> valiuta;
-    // cout << "==============================\n";
-    // cout <<"Iveskite kieki: "<<endl;
-    // cin >> kiekis;
-    //Jeigu pasirenka palyginti kursus
     cout << fixed << setprecision(2);
     if (pasirinkimas == 1) {
         if (valiuta=="GBP") {
