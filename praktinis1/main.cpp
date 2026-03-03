@@ -68,7 +68,6 @@ int main() {
         else {
             cout <<"Netinkamas valiutos trumpinys"<<endl;
         }
-
     }
     //Jeigu pasirenka parduoti valiuta
     else if (pasirinkimas == 3) {
