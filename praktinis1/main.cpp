@@ -40,11 +40,11 @@ int main() {
         cout << fixed << setprecision(2);
         if (pasirinkimas == 1) {
             if (valiuta == "GBP") {
-                cout << " 1 EUR = " << GBP_Bendras << endl;
+                cout << " 1 EUR = " << GBP_Bendras << " GBP"<<endl;
             } else if (valiuta == "USD") {
-                cout << " 1 EUR = " << USD_Bendras << endl;
+                cout << " 1 EUR = " << USD_Bendras <<" USD"<<endl;
             } else if (valiuta == "INR") {
-                cout << " 1 EUR = " << INR_Bendras << endl;
+                cout << " 1 EUR = " << INR_Bendras << " INR"<<endl;
             } else {
                 cout << "Netinkamas valiutos trumpinys" << endl;
             }
@@ -57,15 +57,15 @@ int main() {
                 continue;
             }
             cout << "============================================================\n";
-            cout << "Iveskite kieki (eurais) uz kuri norite pirkti: " << endl;
+            cout << "Iveskite kieki (EUR) uz kuri norite pirkti: " << endl;
             cin >> kiekis;
             cout << "============================================================\n";
             if (valiuta == "GBP") {
-                cout << " Uz " << kiekis << " euru, gaunate: " << GBP_Pirkti * kiekis << " svaru" << endl;
+                cout << " Uz " << kiekis << " EUR, gaunate: " << GBP_Pirkti * kiekis << " GBP" << endl;
             } else if (valiuta == "USD") {
-                cout << " Uz " << kiekis << " euru, gaunate: " << USD_Pirkti * kiekis << " doleriu" << endl;
+                cout << " Uz " << kiekis << " EUR, gaunate: " << USD_Pirkti * kiekis << " USD" << endl;
             } else if (valiuta == "INR") {
-                cout << " Uz " << kiekis << " euru, gaunate: " << INR_Pirkti * kiekis << " rupiju" << endl;
+                cout << " Uz " << kiekis << " EUR, gaunate: " << INR_Pirkti * kiekis << " INR" << endl;
             } else {
                 cout << "Netinkamas valiutos trumpinys" << endl;
             }
@@ -82,11 +82,11 @@ int main() {
             cin >> kiekis;
             cout << "============================================================\n";
             if (valiuta == "GBP") {
-                cout << " Uz " << kiekis << " svaru, gaunate: " << kiekis / GBP_Parduoti << " euru" << endl;
+                cout << " Uz " << kiekis << " GBP, gaunate: " << kiekis / GBP_Parduoti << " EUR" << endl;
             } else if (valiuta == "USD") {
-                cout << " Uz " << kiekis << " doleriu, gaunate: " << kiekis / USD_Parduoti << " euru" << endl;
+                cout << " Uz " << kiekis << " USD, gaunate: " << kiekis / USD_Parduoti << " EUR" << endl;
             } else if (valiuta == "INR") {
-                cout << " Uz " << kiekis << " rupiju, gaunate: " << kiekis / INR_Parduoti << " euru" << endl;
+                cout << " Uz " << kiekis << " INR, gaunate: " << kiekis / INR_Parduoti << " EUR" << endl;
             } else {
                 cout << "Netinkamas valiutos trumpinys" << endl;
             }
